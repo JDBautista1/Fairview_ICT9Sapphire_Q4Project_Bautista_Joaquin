@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Online Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .navbar {
+            background-color: #D1B165;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+        }
+        .navbar-brand img {
+            height: 100px;
+            width: 100px;
+        }
+        .navbar-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-item {
+            margin-right: 20px;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        .searchinput {
+            width: 120px;
+            height: 30px;
+            font-size: 14px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-right: 5px;
+        }
+        .searchsub {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+        .searchsub:hover {
+            background-color: #45a049;
+        }
+        .footer-content {
+            text-align: center;
+            background-color: #333; 
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .footer-contact, .footer-copy {
+            margin-top: 10px;
+        }
+        textarea {
+            width: 80%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #submit {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #submit:hover {
+            background-color: #45a049;
+        }
+        #profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a class="navbar-brand" href="#">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/440520126_329652940222913_5021175017909230234_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHEzFKuh1IBk6gyOXuPtcAjOYb-kvxfzSs5hv6S_F_NK863LHXMlgfWg13_cQ1zOlf4-Vajt00UJyfQXLTgoMFR&_nc_ohc=AB3yAPd2NuwQ7kNvgFEQtDV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGlBkCo3AqLp_lzUOmcrZK8rBV-UFpzvYEZ3T5QoGZUtQ&oe=6661AF3D" alt="Joaquin Bautista">
+    </a>
+    <div id="topnav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="mainpage.html">My Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page2.html">First Quarter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page3.html">Second Quarter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page4.html">Third Quarter</a>
+            </li>
+        </ul>
+    </div>
+    <div class="search-container">
+        <form>
+            <input type="search" placeholder="Search" name="search" class="searchinput">
+            <button type="submit" class="searchsub">Submit</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+    <div id="profile-picture">
+        <img src="https://scontent.fbag4-1.fna.fbcdn.net/v/t1.15752-9/438271409_1168961891215486_6835020085691789073_n.jpg?stp=dst-jpg_s403x403&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHDshsu5KAKFAHygIMmQl4MOjMSV-17tOc6MxJX7Xu05xrgcyWLGOqaT1Myi9QO2NgK0AvAZXWCqn8IDfXMySmr&_nc_ohc=ss-gOL_rjlAQ7kNvgExu9lF&_nc_ht=scontent.fbag4-1.fna&oh=03_Q7cD1QGodoDwJMIKMBOn9zFb8sB_63C9d67WQhS01z0p0rlzkg&oe=66618FB1" alt="Profile Picture">
+            <form action="mainpage.html" class="form-group">
+    </div>
+    <section id="home">
+        <h1>Welcome to My Profile</h1>
+        <p>My name is Joaquin Bautista and this is my Online Portfolio. <br> This contains my First, Second, and Third Quarter's work for this school year. <br> My First Quarter project is about Hypertext Markup Language. <br> My Second Quarter project is about Cascading Style Sheets (CSS). <br> My Third Quarter project is about Bootstrap.</p>
+    </section>
+</div>
+
+<center>
+    <div class="col-md-6">
+        <textarea rows="5" placeholder="Type your comment here..."></textarea>
+        <br>
+        <input type="submit" id="submit" name="submit" value="Submit response">
+    </div>
+</center>
+
+<br><br>
+
+<div class="footer-content">
+    <div class="footer-links">
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.twitter.com">Twitter</a>
+        <a href="https://www.instagram.com">Instagram</a>
+    </div>
+    <div class="footer-contact">
+        <p>Contact us: <a href="mailto:bautista.jl@obmontessori.edu.ph" style="color: white;">bautista.jl@obmontessori.edu.ph</a> | +1 (123) 456-7890</p>
+    </div>
+    <div class="footer-copy">
+        <p>&copy; 2024 Joaquin Bautista. All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+<!---
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Online Portfolio</title>
+
+    <style>
+        #login-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+       .footer-content{
+           position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #333; 
+            color: #fff;
+            padding: 20px 0;
+       }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .navbar {
+            background-color: #D1B165;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         
+            width: 100%;
+        }
+        .navbar-brand img {
+            height: 100px;
+            width: 100px;
+        }
+        .navbar-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-item {
+            margin-right: 20px;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .search-container {
+            width: 180px;
+        }
+        .searchinput {
+            width: 100px;
+            height: 25px;
+            font-size: 14px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .searchsub {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        .searchsub:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a class="navbar-brand">
+        <img style="width: 200px;" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/440520126_329652940222913_5021175017909230234_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHEzFKuh1IBk6gyOXuPtcAjOYb-kvxfzSs5hv6S_F_NK863LHXMlgfWg13_cQ1zOlf4-Vajt00UJyfQXLTgoMFR&_nc_ohc=AB3yAPd2NuwQ7kNvgFEQtDV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGlBkCo3AqLp_lzUOmcrZK8rBV-UFpzvYEZ3T5QoGZUtQ&oe=6661AF3D" alt="Joaquin Bautista">
+    </a>
+    <div id="topnav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="mainpage.html">My Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page2.html">First Quarter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page3.html">Second Quarter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page4.html">Third Quarter</a>
+            </li>
+        </ul>
+    </div>
+    <div class="search-container">
+        <form>
+            <input type="search" placeholder="Search" name="search" class="searchinput">
+            <button type="submit" class="searchsub">Submit</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+    <center>
+    <section id="home">
+        <h1>Welcome to My Profile</h1>
+        <p>My name is Joaquin Bautista and this is my Online Portfolio. <br> This contains my First, Second, and Third Quarter's work for this school year. <br> My First Quarter project is about Hypertext mark-up Language. <br> My Second Quarter project is about Cascading Style Sheet (CSS). <br> My Third Quarter is about Boostrap.</p>
+    </section>
+    </center>
+</div>
+
+        <br><br>
+
+
+        <center>
+        <div class="col-md-6">
+        <textarea color="black" rows="5" cols="50" placeholder="Type your comment here..."></textarea>
+        <input type="submit" id="submit" name="submit" value="Submit response">
+        </div>
+        </center>
+
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.facebook.com" style="color: white; margin: 10px;">Facebook</a>
+                <a href="https://www.twitter.com"  style="color: white; margin: 10px;">Twitter</a>
+                <a href="https://www.instagram.com" style="color: white; margin: 10px;">Instagram</a>
+            </div>
+            <div class="footer-contact" style="margin-top: 10px;">
+                <p>Contact us: <a href="bautista.jl@obmontessori.edu.ph" style="color: white;">bautista.jl@obmontessori.edu.ph</a> | +1 (123) 456-7890</p>
+            </div>
+            <div class="footer-copy" style="margin-top: 10px;">
+                <p>&copy; 2024 Joaquin Bautista. All rights reserved.</p>
+            </div>
+        </div>
+</body>
+</html>
